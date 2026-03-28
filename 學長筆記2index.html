@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>耘楓學長 | 美國護理師 RN 考取路徑</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+        
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #ffffff;
+            color: #1e293b;
+        }
+
+        .hero-bg {
+            background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), 
+                        url('https://images.unsplash.com/photo-1505751172107-5732488c005b?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .section-reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+        .section-reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .nav-glass {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-primary {
+            background: #0f172a;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background: #334155;
+            transform: translateY(-2px);
+        }
+
+        .feature-card {
+            border: 1px solid #f1f5f9;
+            transition: all 0.4s ease;
+        }
+        .feature-card:hover {
+            border-color: #e2e8f0;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05);
+        }
+
+        .line-button {
+            background-color: #06C755;
+            transition: all 0.3s ease;
+        }
+        .line-button:hover {
+            background-color: #05b04b;
+            transform: translateY(-2px);
+        }
+
+        /* 截圖風格：微光感外框 */
+        .glow-box {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            border: 1.5px solid rgba(147, 197, 253, 0.5); 
+            border-radius: 1rem;
+            box-shadow: 0 0 20px rgba(147, 197, 253, 0.2);
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+        }
+        .glow-box:hover {
+            border-color: rgba(147, 197, 253, 0.8);
+            box-shadow: 0 0 30px rgba(147, 197, 253, 0.4);
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #f1f5f9;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+        .faq-item.active i {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 nav-glass border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-slate-900 rounded-lg flex items-center justify-center text-white">
+                    <i class="fas fa-stethoscope"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-bold tracking-tight">ShiftNotes</span>
+                    <!-- 已取消 RN 前後的空格 -->
+                    <span class="text-xs block text-slate-500">耘楓學長的RN實戰教室</span>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#story" class="hover:text-blue-600 transition-colors">關於學長</a>
+                <a href="#notes" class="hover:text-blue-600 transition-colors">筆記特色</a>
+                <a href="#guarantee" class="hover:text-blue-600 transition-colors">退費保障</a>
+                <a href="#faq" class="hover:text-blue-600 transition-colors">常見問題</a>
+                <a href="https://www.instagram.com/shiftnotes1991" target="_blank" class="text-slate-400 hover:text-pink-600"><i class="fab fa-instagram text-xl"></i></a>
+            </div>
+            <a href="https://lin.ee/7nioTLP" target="_blank" class="line-button text-white px-5 py-2 rounded-full text-sm font-bold flex items-center gap-2">
+                <i class="fab fa-line text-lg"></i> 免費諮詢
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-screen flex items-center pt-20 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                    </span>
+                    2026 RN 考取計畫開放中
+                </div>
+                <h1 class="text-5xl md:text-6xl font-black text-slate-900 leading-tight">
+                    從台灣臨床 <br><span class="text-blue-600 underline decoration-blue-200 underline-offset-8">走向美國的RN</span>
+                </h1>
+                <p class="text-lg text-slate-600 leading-relaxed max-w-lg">
+                    我是耘楓，擁有 10 年醫院臨床經驗，走過英文基礎不佳、在惡劣醫療環境掙扎的路，現在，我要帶領你避開冤枉路，用正確的方法考取美國護理師。
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#notes" class="btn-primary text-white px-10 py-4 rounded-xl font-bold text-center">
+                        查看實戰筆記
+                    </a>
+                    <a href="https://drive.google.com/drive/folders/1croN3e0fPb0H_4UqSa8RR00lFnD3cMA1?usp=drive_link" target="_blank" class="border border-slate-200 hover:bg-slate-50 px-10 py-4 rounded-xl font-bold text-center transition-all">
+                        領取試讀連結
+                    </a>
+                </div>
+                <div class="flex items-center gap-4 pt-4">
+                    <div class="flex -space-x-2">
+                        <img class="w-10 h-10 rounded-full border-2 border-white bg-slate-200" src="https://i.pravatar.cc/100?img=1" alt="Avatar">
+                        <img class="w-10 h-10 rounded-full border-2 border-white bg-slate-200" src="https://i.pravatar.cc/100?img=2" alt="Avatar">
+                        <img class="w-10 h-10 rounded-full border-2 border-white bg-slate-200" src="https://i.pravatar.cc/100?img=3" alt="Avatar">
+                    </div>
+                    <p class="text-sm text-slate-500 font-medium">已有 200+ 位護理戰友參與計畫</p>
+                </div>
+            </div>
+            <div class="relative hidden md:block">
+                <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1000" class="rounded-3xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700" alt="Professional Nursing">
+                <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl max-w-[240px] border border-slate-100">
+                    <p class="text-xs text-slate-400 mb-2 uppercase tracking-widest font-bold">學長座右銘</p>
+                    <p class="text-slate-800 font-medium italic">「英文不好不是藉口，找不到對的方法才是核心問題。」</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Story / Pain Points -->
+    <section id="story" class="py-32 px-6 bg-slate-50">
+        <div class="max-w-4xl mx-auto text-center space-y-12">
+            <h2 class="text-3xl font-bold section-reveal">10 年臨床的體悟</h2>
+            <div class="grid md:grid-cols-2 gap-12 text-left">
+                <div class="space-y-6 section-reveal">
+                    <p class="text-slate-600 leading-relaxed">
+                        我在台灣醫療現場待了 10 年，看過無數優秀的同僚因為福利欠佳、環境壓抑，而熄滅了對護理的熱情。
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        當初我也擔心英文基礎不好，以為美國 RN 是遙不可及的夢，但我發現，考取 RN 靠的不是辭典般的單字量，而是<strong>「醫護邏輯」</strong>與<strong>「高效率的英文拆解術」</strong>。
+                    </p>
+                </div>
+                <div class="space-y-6 section-reveal" style="transition-delay: 0.2s;">
+                    <p class="text-slate-600 leading-relaxed font-bold text-slate-900">
+                        我整理出這套筆記，就是為了幫你省下摸索的時間。
+                    </p>
+                    <div class="p-6 bg-white rounded-2xl border border-slate-200">
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                                <span>全英文翻譯對照，建立美式思維</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                                <span>10 年臨床濃縮出的考點精華</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                                <span>專為英文基礎薄弱者設計</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notes Feature -->
+    <section id="notes" class="py-32 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+                <div class="max-w-xl">
+                    <h2 class="text-4xl font-bold mb-6">不僅是筆記，更是你的陪考教練</h2>
+                    <p class="text-slate-500">購買筆記後，我會親自為你安排讀書計畫，並一路陪伴你直到考上為止。</p>
+                </div>
+                <a href="https://drive.google.com/drive/folders/1croN3e0fPb0H_4UqSa8RR00lFnD3cMA1?usp=drive_link" target="_blank" class="text-blue-600 font-bold border-b-2 border-blue-600 pb-1">瞭解更多筆記細節 →</a>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="feature-card p-10 rounded-3xl section-reveal">
+                    <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center text-2xl mb-8">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">全英文翻譯精華</h3>
+                    <p class="text-slate-500 leading-relaxed">
+                        拋棄繁瑣的中文解釋，直接對標 NCLEX 題庫術語，讓你在考場上看到英文不再恐懼。
+                    </p>
+                </div>
+                <div class="feature-card p-10 rounded-3xl section-reveal" style="transition-delay: 0.2s;">
+                    <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center text-2xl mb-8">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">題庫與刷題計畫</h3>
+                    <p class="text-slate-500 leading-relaxed">
+                        包含題庫使用引導與刷題最後衝刺策略，我會協助你規劃每日進度，不求快，求穩紮穩打。
+                    </p>
+                </div>
+                <div class="feature-card p-10 rounded-3xl section-reveal" style="transition-delay: 0.4s;">
+                    <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center text-2xl mb-8">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">陪跑到考取為止</h3>
+                    <p class="text-slate-500 leading-relaxed">
+                        計畫不會因為時間結束而中斷，只要你有決心，學長就會陪你一直跑到考取那一天。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section id="guarantee" class="py-32 px-6">
+        <div class="max-w-5xl mx-auto bg-slate-900 rounded-[3rem] p-12 md:p-20 text-white relative overflow-hidden">
+            <div class="relative z-10">
+                <div class="inline-block px-4 py-1 bg-white/10 rounded-full text-sm font-bold mb-10">誠信保障</div>
+                
+                <div class="mb-10">
+                    <div class="glow-box">
+                        <span class="text-2xl md:text-4xl font-black tracking-widest">考不上，全額退費</span>
+                    </div>
+                </div>
+
+                <p class="text-slate-400 text-lg mb-12 max-w-2xl leading-relaxed">
+                    如果你完全依照安排的計畫執行，卻在連續兩次考試中未能通過，我們將提供完整的退費機制，這份計畫的核心，是學長對你未來的責任感。
+                </p>
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <a href="https://lin.ee/7nioTLP" target="_blank" class="bg-white text-slate-900 px-10 py-4 rounded-xl font-bold text-center hover:bg-blue-50 transition-colors">
+                        加入官方 LINE 了解詳情
+                    </a>
+                    <div class="flex items-center gap-3 text-slate-400">
+                        <i class="fas fa-shield-check text-blue-400"></i>
+                        <span class="text-sm">附帶完整退費機制</span>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute right-0 bottom-0 opacity-10 hidden lg:block">
+                <i class="fas fa-certificate text-[300px]"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-32 px-6 bg-white">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-16 section-reveal">常見問題解答</h2>
+            
+            <div class="space-y-2 section-reveal">
+                <div class="faq-item group">
+                    <button class="w-full py-6 flex justify-between items-center text-left focus:outline-none" onclick="toggleFaq(this)">
+                        <span class="font-bold text-lg text-slate-700 group-hover:text-blue-600 transition-colors">英文基礎不好，真的能考過美國 RN 嗎？</span>
+                        <i class="fas fa-chevron-down text-slate-300 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="pb-6 text-slate-500 leading-relaxed">
+                            這是我最常被問到的問題，NCLEX 考試考的是「護理邏輯」與「臨床安全觀念」，並非文學造詣，我的筆記將複雜的英文拆解為醫護人員熟悉的學術詞彙與關鍵字，只要掌握了這些對標詞彙，英文薄弱也能順利應考。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item group">
+                    <button class="w-full py-6 flex justify-between items-center text-left focus:outline-none" onclick="toggleFaq(this)">
+                        <span class="font-bold text-lg text-slate-700 group-hover:text-blue-600 transition-colors">筆記購買後，讀書計畫是如何安排的？</span>
+                        <i class="fas fa-chevron-down text-slate-300 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="pb-6 text-slate-500 leading-relaxed">
+                            購買後學長會透過官方 LINE 與你聯繫，確認你的目標考期與每日可讀書時間，除了核心筆記內容，我也會規劃題庫的使用時機與刷題最後衝刺策略，確保你在進考場前已經具備足夠的實戰經驗。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item group">
+                    <button class="w-full py-6 flex justify-between items-center text-left focus:outline-none" onclick="toggleFaq(this)">
+                        <span class="font-bold text-lg text-slate-700 group-hover:text-blue-600 transition-colors">所謂的「退費機制」具體規範是什麼？</span>
+                        <i class="fas fa-chevron-down text-slate-300 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="pb-6 text-slate-500 leading-relaxed">
+                            為了展現負責任的態度，若你完成所有學長安排的進度與測驗，卻在連續兩次正式考試中未能通過，我們將提供全額退費，詳細條款會於加入計畫時清楚說明。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item group">
+                    <button class="w-full py-6 flex justify-between items-center text-left focus:outline-none" onclick="toggleFaq(this)">
+                        <span class="font-bold text-lg text-slate-700 group-hover:text-blue-600 transition-colors">考完拿到執照後，後續會有協助嗎？</span>
+                        <i class="fas fa-chevron-down text-slate-300 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="pb-6 text-slate-500 leading-relaxed">
+                            拿到執照只是開始，學長也會分享後續關於美國醫院應徵、履歷撰寫以及過渡期的心路歷程，讓你不只是考到執照，更能真正順利出國工作。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 bg-white border-t border-slate-100 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+            <div class="text-center md:text-left">
+                <div class="text-2xl font-black mb-2">ShiftNotes</div>
+                <p class="text-slate-400 text-sm">幫助台灣護理師走向世界的推手</p>
+                <div class="flex gap-6 mt-8 justify-center md:justify-start">
+                    <a href="https://www.instagram.com/shiftnotes1991" target="_blank" class="text-slate-400 hover:text-slate-900 transition-colors"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="https://lin.ee/7nioTLP" target="_blank" class="text-slate-400 hover:text-slate-900 transition-colors"><i class="fab fa-line text-xl"></i></a>
+                </div>
+            </div>
+            
+            <div class="bg-slate-50 p-8 rounded-3xl flex flex-col md:flex-row items-center gap-8">
+                <div class="text-center md:text-left">
+                    <div class="font-bold text-lg">準備好開始了嗎？</div>
+                    <p class="text-slate-500 text-sm">現在就領取試讀筆記與免費諮詢</p>
+                </div>
+                <a href="https://drive.google.com/drive/folders/1croN3e0fPb0H_4UqSa8RR00lFnD3cMA1?usp=drive_link" target="_blank" class="bg-slate-900 text-white px-8 py-3 rounded-xl font-bold inline-block hover:bg-slate-800 transition-colors">
+                    取得試讀連結
+                </a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-slate-50 text-center text-xs text-slate-300">
+            &copy; 2026 ShiftNotes | Designed for Nurses by fong.
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.section-reveal').forEach(el => observer.observe(el));
+
+        function toggleFaq(button) {
+            const item = button.parentElement;
+            const isActive = item.classList.contains('active');
+            if (!isActive) {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        }
+    </script>
+</body>
+</html>
